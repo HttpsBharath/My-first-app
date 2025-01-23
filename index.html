@@ -6,9 +6,19 @@
   <title>Input and Output</title>
 </head>
 <body>
-   <h1>Display something in the paragraph</h1>
-   <input type="text" placeholder="type something here" id="inputvalue">
-   <p id="output"></p>
+   <h1>Select a drop down </h1>
+   <label for="country">Country :</label>
+   <select name="country" id="country" onchange="populatedcountry()">
+    <option value="">select a country</option>
+    <option value="india">india</option>
+    <option value="usa">usa</option>
+    <option value="canada"> canada</option>
+   </select>
+   <label for="state">State :</label>
+   <select id="state" name="state">
+      <option value=""> Select a state</option>
+   </select>
+   
   <script src="script.js"></script>
 </body>
 </html>
